@@ -36,8 +36,8 @@ def generateFolderIcon(color):
 def h(int):
     return hex(int).replace('0x','') * 2
 
-for r in range(0, 16, 2):
-    for g in range(0, 16, 2):
-        for b in range(0, 16, 2):
+for r in range(16):
+    for g in range(16):
+        for b in range(16):
             color = '#' + h(r) + h(g) + h(b)
             generateFolderIcon(color)
